@@ -1,8 +1,8 @@
-#!/bin/sh -l
+#!/bin/bash
 
+# checks
 [[ $# != 1 ]] && echo "Usage: $0 <n>" && exit 1
 ! [[ $1 =~ ^[0-9]+$ ]] && echo "$1 is not a number" && exit 2
-
 
 N=$1
 a=0
@@ -13,5 +13,4 @@ for (( i=0; i<N; i++ )); do
     a=$b
     b=$fn
 done
-
 echo Fib number w/ ord $1 is $a
