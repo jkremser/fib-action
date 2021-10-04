@@ -3,7 +3,7 @@ on: [push]
 jobs:
   fib:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Test the fibonacci sequence dummy action
     steps:
       - name: Hello world action step
         id: fib
