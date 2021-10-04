@@ -1,0 +1,16 @@
+# action.yml
+name: 'Fibonacci sequence dummy action'
+description: 'Prints the nth fib number'
+inputs:
+  n:  
+    description: 'Nth number to calculate'
+    required: true
+    default: '10'
+outputs:
+  output: # id of output
+    description: 'The result'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.n }}
