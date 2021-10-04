@@ -14,3 +14,4 @@ for (( i=0; i<N; i++ )); do
     b=$fn
 done
 echo Fib number w/ ord $1 is $a
+echo "::set-output name=result::$a"

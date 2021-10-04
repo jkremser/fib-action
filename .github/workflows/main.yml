@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: fib
-        uses: jkremser/fib-action@v2
+        uses: jkremser/fib-action@v3
         with:
           n: '42'
       - name: Get the output time
